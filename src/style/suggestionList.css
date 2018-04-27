@@ -1,0 +1,27 @@
+.suggestions{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  align-items: center;
+}
+.suggestion{
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  left: 0em;
+  /* width: 100%; */
+  /* padding: 2em; */
+  margin: 1em 2em;
+  border-radius: 1em;
+  left: 0em;
+  width: 100%;
+}
+
+.suggestion-details{
+  display: flex;
+  flex-direction: column;
+}
+
+.more-button{
+
+}
