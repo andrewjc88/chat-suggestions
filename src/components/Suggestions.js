@@ -1,21 +1,26 @@
 import React, { Component } from 'react';
 import '../style/suggestions.css';
 import SuggestionList from './SuggestionList';
-
+import FindSuggestions from './FindSuggestions'
 
 class Suggestions extends Component {
+
+  clickity = () => {
+    return(<FindSuggestions />)
+  }
   render() {
+    
     return (
-      <div className="suggestions-body">
-        <h1 className="suggestion-title">
+      <div className="card-body">
+        <h1 className="">
         {/* user name will populate */}
           Mike invited you to vote on suggestions
         </h1>
-        <SuggestionList resturants={this.props.resturants}/>
+        <SuggestionList />
 
         <button 
-          className="suggestion-button"
-          // onClick={}
+          className=""
+          onClick={this.clickity}
         >Suggest something else</button>
       </div>
     );

@@ -1,27 +1,41 @@
-.suggestions{
+.suggestions {
   display: flex;
   flex-direction: column;
   width: 80%;
   align-items: center;
 }
-.suggestion{
+.suggestion {
   display: flex;
+  align-items: center;
+
   flex-direction: row;
   background-color: white;
   left: 0em;
   /* width: 100%; */
   /* padding: 2em; */
   margin: 1em 2em;
+  padding: 1em;
   border-radius: 1em;
-  left: 0em;
   width: 100%;
 }
 
-.suggestion-details{
+.suggestion-details {
   display: flex;
   flex-direction: column;
+  margin: 0em 1em;
 }
 
-.more-button{
+.suggestion-image {
+  width: 6em;
+  height: 6em;
+  /* align-content: center; */
+  /* margin: 1em; */
+}
 
+.vote-wrapper {
+  display: flex;
+  align-self: flex-end;
+  background-color: blue;
+  height: 80%;
+  width: 2em;
 }

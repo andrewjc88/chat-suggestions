@@ -1,0 +1,31 @@
+.chat-wrapper {
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  align-items: center;
+  width: 70vw;
+  max-width: 60em;
+}
+
+.message {
+  align-self: left;
+  display: flex;
+  flex-direction: row;
+  background-repeat: no-repeat;
+  background-size: 3em;
+  margin: 1em 2em;
+
+}
+
+.message p {
+  margin-left: 4em;
+}
+
+.user1 {
+  background-image: url(../img/user1.svg);
+}
+
+.user2 {
+  background-image: url(../img/user2.svg);
+}
+

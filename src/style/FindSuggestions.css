@@ -1,0 +1,22 @@
+.search-box {
+  /* display: flex;
+
+  flex: 1;
+  width: 80%;
+  background: #fff;
+  border-radius: 1em; */
+}
+
+.input {
+  display: flex;
+  /* align-self: left; */
+  /* width: 100%; */
+  padding: 1em 4em;
+  font-size: 1.25em;
+  border: none;
+  outline: none;
+}
+
+.search-results {
+
+}

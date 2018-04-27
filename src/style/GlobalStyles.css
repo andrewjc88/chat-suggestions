@@ -1,0 +1,75 @@
+h1 {
+  text-align: center;
+  margin: 2em 2em 1em 2em;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+}
+
+h2 {
+  
+}
+
+h3 {
+  margin: 0em;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+a {
+  
+}
+
+a:hover {
+  
+}
+
+button {
+  height: 2em;
+  width: 40%;
+  min-width:15em;
+
+  border-radius: 1em;
+  background-color: #384575;
+  box-shadow:  6px 6px 8px rgba(0, 0, 0, 0.185); 
+
+  color: white;
+  font-weight: 600;
+  font-size: 1.2em;
+  margin: 2em;
+  outline: none;
+
+  transition-property: all;
+  transition-duration: .3s;
+  transition-timing-function: ease-in-out;
+}
+
+button:hover{
+  background-color: #303b64;
+
+    box-shadow:  4px 4px 6px rgba(0, 0, 0, 0.185);
+
+}
+
+button:active{
+
+  background-color: #384575;
+
+  box-shadow:  2px 2px 4px rgba(0, 0, 0, 0.185);
+}
+
+.card-body {
+  box-shadow:  6px 6px 8px rgba(0, 0, 0, 0.185); 
+  margin: 2em auto ;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  padding: 1em;
+  align-items: center;
+  width: 60vw;
+  max-width: 60em;
+  background-color: #F5F5F5;
+  border-radius: 1em;
+}
