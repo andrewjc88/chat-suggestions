@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './style/GlobalStyles.css';
 import Chat from './components/Chat';
-import FindSuggestions from './components/FindSuggestions';
 import Suggestions from './components/Suggestions';
 import AOS from 'aos';
 
@@ -14,6 +13,7 @@ class App extends Component {
       duration: 1000,
       easing: 'ease-out',
       delay: 1,
+      once: true
     });
     
     return (
@@ -21,9 +21,9 @@ class App extends Component {
         <div>
           <Chat /> 
         </div>
-        <div data-aos="fade-up">
+        {/* <div data-aos="fade-up">
           <FindSuggestions /> 
-        </div >
+        </div > */}
         <div data-aos="fade-up">
           <Suggestions />
         </div>

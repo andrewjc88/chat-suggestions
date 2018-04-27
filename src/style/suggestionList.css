@@ -6,36 +6,81 @@
 }
 .suggestion {
   display: flex;
-  align-items: center;
-
   flex-direction: row;
+  justify-content: center;
+
+
+  
   background-color: white;
-  left: 0em;
-  /* width: 100%; */
-  /* padding: 2em; */
-  margin: 1em 2em;
+  margin: .7em 2em;
   padding: 1em;
   border-radius: 1em;
   width: 100%;
 }
 
 .suggestion-details {
-  display: flex;
-  flex-direction: column;
-  margin: 0em 1em;
+
+  margin: 0em 5em 0em 1em;
 }
 
 .suggestion-image {
   width: 6em;
   height: 6em;
-  /* align-content: center; */
-  /* margin: 1em; */
+
 }
 
 .vote-wrapper {
+
   display: flex;
-  align-self: flex-end;
-  background-color: blue;
-  height: 80%;
-  width: 2em;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-color: blue; */
+  height: 6em;
+  width: 10em;
+}
+.icon-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;  
+}
+
+
+
+.vote-icon {
+  background-repeat: no-repeat;
+  opacity: .7;
+  margin: .5em;
+  width: 2.2em;
+  height: 2.2em;
+
+  transition-property: all;
+  transition-duration: .3s;
+  transition-timing-function: ease-in-out;
+}
+
+.vote-icon:hover {
+  opacity: 1;
+  
+}
+
+.vote-icon:active {
+  opacity: .7;
+  animation-name: bounce;
+  animation-duration: 1s;
+
+  
+}
+
+.up {
+  background-image: url(../img/down.svg);
+
+}
+
+.down {
+  background-image: url(../img/up.svg);
+  /* padding-bottom: .2em; */
 }

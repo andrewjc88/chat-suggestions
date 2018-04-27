@@ -8,10 +8,11 @@ class Suggestions extends Component {
   clickity = () => {
     return(<FindSuggestions />)
   }
+
   render() {
     
     return (
-      <div className="card-body">
+      <div className="card-body" data-aos="fade-up">
         <h1 className="">
         {/* user name will populate */}
           Mike invited you to vote on suggestions
