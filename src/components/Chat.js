@@ -40,8 +40,8 @@ const Chat = () => (
           }
           {
             context.state.showSuggestions === true ?
-              <div >
-                <span >Recommendations seen by other user</span>
+              <div data-aos="fade-up">
+                <h2 >Recommendations seen by other user</h2>
                 <Suggestions />
               </div >
               : null

@@ -59,7 +59,10 @@ const FindSuggestions = () => (
           }
           {
             context.state.suggestionsPicks.length >= 1 ?
-              <button onClick={() => { context.clickShowSuggestions() }}>Send recomendations</button>
+              <button onClick={() => { 
+                context.clickShowFindSuggestions()
+                context.clickShowSuggestions() 
+              }}>Send recomendations</button>
               : null
           }
         </React.Fragment>
