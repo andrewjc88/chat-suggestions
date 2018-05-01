@@ -1,0 +1,141 @@
+body{
+  margin: 0em;
+  padding: 0em;
+}
+
+h1 {
+  text-align: center;
+  margin: 1em;
+  font-family: 'Armata', sans-serif;
+}
+
+h2 {
+  font-family: 'Armata', sans-serif;
+  margin: 0em;
+  padding: 0em;
+}
+
+h3 {
+  font-family: 'Armata', sans-serif;
+  margin: 0em;
+  padding: 0em;
+}
+
+p {
+  font-family: 'Armata', sans-serif;
+  font-weight: 400;
+  margin: 0em;
+  font-size: .8em;
+}
+
+a {
+  color: #357edd;
+  font-family: 'Armata', sans-serif;
+  font-size: .8em;
+}
+
+a:hover {
+  color: #3073ca;
+  text-shadow:  0px 0px 8px rgba(0, 0, 0, 0.185); 
+}
+
+b {
+  font-family: 'Armata', sans-serif;
+}
+
+input{
+  font-family: 'Armata', sans-serif;
+}
+
+button {
+  height: 2.5em;
+  width: 25vw;
+  min-width:15em;
+  margin: 2em;
+  
+  color: white;
+  font-weight: 600;
+  font-size: 1.2em;
+  border-radius: .5em;
+  box-shadow:  6px 6px 8px rgba(0, 0, 0, 0.185); 
+  background: linear-gradient(to right, #357edd , #235494);  
+  
+  outline: none;
+  font-family: 'Armata', sans-serif;
+  
+  transition-property: all;
+  transition-duration: .2s;
+  transition-timing-function: ease-in-out;
+}
+
+button:hover{
+  transform: translate(0, -3%);
+  box-shadow:  8px 8px 10px rgba(0, 0, 0, 0.185); 
+}
+
+button:active{
+  transform: scale(.95);
+  transform: translate(0, 3%);
+  box-shadow:  4px 4px 6px rgba(0, 0, 0, 0.185); 
+}
+
+.app {
+  display: flex;
+
+  /* height: 100vh; */
+  width: 70vw;
+  max-width: 64em;
+  min-width: 30em;
+
+  /* padding: 6em 0em; */
+  
+  margin: auto;
+  flex-direction: column;
+  align-items: center;
+  /* overflow: scroll; */
+
+  box-shadow:  2px 2px 30px rgba(0, 0, 0, 0.144); 
+}
+
+.card {
+  display: flex;
+  
+  min-width: 27em;
+  margin: 2em auto ;
+  max-width: 50em;
+  padding: 4em 1em;
+  width: 60vw;
+  
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  box-shadow:  2px 2px 30px rgba(0, 0, 0, 0.144); 
+  border-radius: 1em;
+}
+
+.suggestion-card {
+  display: flex;
+
+  width: 40vw;
+  max-width: 35em;
+  min-width: 24em;
+  margin: .5em 0em;
+  padding: 1em 2em;
+
+  flex-direction: row;
+  align-items: center;
+  
+  border-radius: 1em;  
+  background-color: white;
+  box-shadow:  0px 0px 20px rgba(0, 0, 0, 0.144); 
+  
+  transition-duration: .25s; 
+  transition-timing-function: ease-in;
+}
+
+.suggestion-card-selected {
+  background-color: rgb(219, 219, 219);
+}
+
+

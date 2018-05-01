@@ -1,31 +1,20 @@
-import React, { Component } from 'react';
+import React from 'react';
 import '../style/suggestions.css';
 import SuggestionList from './SuggestionList';
-import FindSuggestions from './FindSuggestions'
 
-class Suggestions extends Component {
+const Suggestions = () => (
 
-  clickity = () => {
-    return(<FindSuggestions />)
-  }
-
-  render() {
-    
-    return (
-      <div className="card-body" data-aos="fade-up">
-        <h1 className="">
-        {/* user name will populate */}
-          Mike invited you to vote on suggestions
-        </h1>
-        <SuggestionList />
-
-        <button 
-          className=""
-          onClick={this.clickity}
-        >Suggest something else</button>
-      </div>
-    );
-  }
-}
+  <div className="card">
+    <h1 className="">
+      {/* user name will populate */}
+      Mike invited you to vote on suggestions
+    </h1>
+    <SuggestionList />
+    <button
+      className=""
+      onClick={this.clickity}
+    >Suggest something else</button>
+  </div>
+)
 
 export default Suggestions;
