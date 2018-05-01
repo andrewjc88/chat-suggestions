@@ -107,7 +107,7 @@ class AppProvider extends Component {
               return sug.vote = 'upVote';
             }
           })
-          console.log(voteSug);
+          // console.log(voteSug);
           // this.setState((suggestionsPicks) => ({
           //   suggestionsPicks: voteSug
           // }))
