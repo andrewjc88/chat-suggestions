@@ -2,12 +2,7 @@
   flex-grow: 3;
 }
 
-.suggestion-image {
-  border-radius: 10%;
-  width: 6em;
-  height: 6em;
-  margin-right: 1em;
-}
+
 
 .icons-container{
   display: flex;

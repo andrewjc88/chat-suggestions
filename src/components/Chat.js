@@ -11,14 +11,16 @@ const Chat = () => (
       <React.Fragment>
         <div className={"chat-wrapper"}>
           <h1 className="chat-title">Chat with Sarah</h1>
-          <div className="message user1 " data-aos="fade-up" data-aos-delay="500">
-            <p><b>Sarah:</b> Hey how are you?</p>
-          </div>
-          <div className="message user2" data-aos="fade-up" data-aos-delay="1500">
-            <p><b>You:</b> Great! Still on for lunch today?</p>
-          </div>
-          <div className="message user1" data-aos="fade-up" data-aos-delay="2500">
-            <p><b>Sarah:</b> Sure. Where should we meet?</p>
+          <div className={"chat-messages-wrapper"}>
+            <div className="message user1 " data-aos="fade-up" data-aos-delay="500">
+              <p><b>Sarah:</b> Hey how are you?</p>
+            </div>
+            <div className="message user2" data-aos="fade-up" data-aos-delay="1500">
+              <p><b>You:</b> Great! Still on for lunch today?</p>
+            </div>
+            <div className="message user1" data-aos="fade-up" data-aos-delay="2500">
+              <p><b>Sarah:</b> Sure. Where should we meet?</p>
+            </div>
           </div>
           <div data-aos="fade-up" data-aos-delay="3000">
             <button

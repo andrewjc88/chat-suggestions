@@ -29,6 +29,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin-left: 1em;
 }
 
 .add-button-wrapper {
@@ -73,5 +74,10 @@
   transform: translate(0, 3%);
 }
 
+@media only screen and (max-width: 402px) {
+  .add-wrapper{
+    flex-direction: row;
 
+  }
+}
 

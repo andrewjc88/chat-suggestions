@@ -10,7 +10,7 @@ const SuggestionList = () => (
           {
             context.state.suggestionsPicks.map((suggestion) => (
               <div className="suggestion-card"
-                key={suggestion.name}>
+                key={suggestion.id}>
                 <img src={suggestion.image}
                   alt={suggestion.name}
                   className="suggestion-image" />
@@ -26,7 +26,7 @@ const SuggestionList = () => (
 
                 <div className="icons-container">
                   <div className="icon-wrapper"
-                    onClick={ () => {context.upVoteClick(suggestion.name)} }>
+                    onClick={ () => context.upVoteClick(suggestion.name) }>
                     <div className={"icon-background " + (
                       suggestion.vote === 'upVote' ?
                       "icon-background-clicked" : "" )}>

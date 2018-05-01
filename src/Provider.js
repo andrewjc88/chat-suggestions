@@ -100,13 +100,29 @@ class AppProvider extends Component {
         }),
 
         upVoteClick: (nameOf) => {
-          let pick = this.state.suggestionsPicks.map((sug) => {
+          this.state.suggestionsPicks.map( sug => {
+            console.log(sug);
+
             if (sug.name === nameOf) {
-              return (sug.id)
+              return sug.vote = 'upVote';
             }
-            console.log(pick)
           })
+          console.log(voteSug);
+          // this.setState((suggestionsPicks) => ({
+          //   suggestionsPicks: voteSug
+          // }))
         },
+
+        // upVoteClick: (nameOf) => {
+        //   let pick = ''
+        //   this.state.suggestionsPicks.map(( sug, i ) => {
+        //     vote:if(sug.name === nameOf) {
+        //       pick += i;
+        //     }
+        //   this.setState({{ suggestionsPicks[pick].vote: pick }})
+        //     console.log(pick)
+        //   })
+        // },
 
       //   downVoteClick: (nameOf) => {
       //     this.state.suggestionsPicks.map(sug => {
