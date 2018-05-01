@@ -100,39 +100,28 @@ class AppProvider extends Component {
         }),
 
         upVoteClick: (nameOf) => {
-          this.state.suggestionsPicks.map( sug => {
-            console.log(sug);
-
+          const voteSug = this.state.suggestionsPicks.map( sug => {
             if (sug.name === nameOf) {
-              return sug.vote = 'upVote';
+              sug.vote = 'upVote';
             }
+            return sug;
           })
-          // console.log(voteSug);
-          // this.setState((suggestionsPicks) => ({
-          //   suggestionsPicks: voteSug
-          // }))
+          this.setState((suggestionsPicks) => ({
+            suggestionsPicks: voteSug
+          }))
         },
 
-        // upVoteClick: (nameOf) => {
-        //   let pick = ''
-        //   this.state.suggestionsPicks.map(( sug, i ) => {
-        //     vote:if(sug.name === nameOf) {
-        //       pick += i;
-        //     }
-        //   this.setState({{ suggestionsPicks[pick].vote: pick }})
-        //     console.log(pick)
-        //   })
-        // },
-
-      //   downVoteClick: (nameOf) => {
-      //     this.state.suggestionsPicks.map(sug => {
-      //       this.setState({
-      //         vote:if(sug.name === nameOf) {
-      //         'downVote'
-      //       }
-      //     })
-      //   })
-      // },
+        downVoteClick: (nameOf) => {
+          const voteSug = this.state.suggestionsPicks.map( sug => {
+            if (sug.name === nameOf) {
+              sug.vote = 'downVote';
+            }
+            return sug;
+          })
+          this.setState((suggestionsPicks) => ({
+            suggestionsPicks: voteSug
+          }))
+        },
 
         sendMessage: (message) => this.setState({
           messages: [...this.state.messages, message]
