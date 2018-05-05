@@ -2,8 +2,6 @@
   flex-grow: 3;
 }
 
-
-
 .icons-container{
   display: flex;
   width: 4em;
@@ -46,6 +44,10 @@
   align-content: flex-end;
   transition-duration: .2s;
   transition-timing-function: ease-in-out;
+}
+
+.orStyles {
+  margin: -1em;
 }
 
 .icon:active {

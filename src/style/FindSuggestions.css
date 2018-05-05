@@ -3,8 +3,8 @@
   width: 80%;
   height: 3em;
   border-radius: 1em;
-  box-shadow:  2px 2px 30px rgba(0, 0, 0, 0.144); 
-
+  box-shadow:  2px 2px 30px 
+  rgba(0, 0, 0, 0.144); 
 }
 
 .search-box {
@@ -17,19 +17,12 @@
   outline: none;
 }
 
-.suggestion-detail-wrapper {
-  display: flex;
-  flex-direction: column;
-  /* margin-left: 1em; */
-  flex-grow: 1;
-}
-
 .add-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin-left: 1em;
+  /* margin-left: 1em; */
 }
 
 .add-button-wrapper {
@@ -39,19 +32,22 @@
   width: 2.5em;
   height: 2.5em;
   border-radius: 50%;
-  box-shadow:  6px 6px 8px rgba(0, 0, 0, 0.185); 
+  box-shadow:  6px 6px 8px 
+  rgba(0, 0, 0, 0.185); 
   transition-duration: .2s;
   transition-timing-function: ease-in-out;
 }
 
 .add-button-wrapper:hover {
   transform: translate(0, -3%);
-  box-shadow:  8px 8px 10px rgba(0, 0, 0, 0.185); 
+  box-shadow:  8px 8px 10px 
+  rgba(0, 0, 0, 0.185); 
 }
 
 .add-button-wrapper:active {
   transform: translate(0, 3%);
-  box-shadow:  4px 4px 6px rgba(0, 0, 0, 0.185); 
+  box-shadow:  4px 4px 6px 
+  rgba(0, 0, 0, 0.185); 
 }
 
 .add-button {

@@ -12,8 +12,15 @@ const Suggestions = () => (
     <SuggestionList />
     <button
       className=""
-      onClick={this.clickity}
-    >Suggest something else</button>
+      onClick={this.clickity}>
+      Send votes
+    </button>
+    <h2 className="orStyles">or</h2>
+    <button
+      className=""
+      onClick={this.clickity}>
+      Suggest something else
+    </button>
   </div>
 )
 

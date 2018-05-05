@@ -14,7 +14,7 @@ const SuggestionList = () => (
                 <img src={suggestion.image}
                   alt={suggestion.name}
                   className="suggestion-image" />
-                <div className="suggestion-details" >
+                <div className="suggestion-detail-wrapper" >
                   <h3>{suggestion.name}</h3>
                   <p>{suggestion.rating}</p>
                   <p>{suggestion.type}</p>
@@ -26,23 +26,22 @@ const SuggestionList = () => (
 
                 <div className="icons-container">
                   <div className="icon-wrapper"
-                    onClick={ () => context.upVoteClick(suggestion.name) }>
+                    onClick={() => context.upVoteClick(suggestion.name)}>
                     <div className={"icon-background " + (
                       suggestion.vote === 'upVote' ?
-                      "icon-background-clicked" : "" )}>
+                        "icon-background-clicked" : "")}>
                       <div className="icon up"></div>
                     </div>
                   </div>
                   <div className="icon-wrapper"
-                    onClick={ () => {context.downVoteClick(suggestion.name)} }>
+                    onClick={() => { context.downVoteClick(suggestion.name) }}>
                     <div className={"icon-background " + (
                       suggestion.vote === 'downVote' ?
-                      "icon-background-clicked" : "" )}>
+                        "icon-background-clicked" : "")}>
                       <div className="icon down"></div>
                     </div>
                   </div>
                 </div>
-                {console.log( suggestion.vote )}
               </div>
             ))
           }

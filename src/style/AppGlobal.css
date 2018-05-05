@@ -1,6 +1,8 @@
-body{
+body {
   margin: 0em;
   padding: 0em;
+  text-align: center;
+
 }
 
 h1 {
@@ -13,6 +15,7 @@ h2 {
   font-family: 'Armata', sans-serif;
   margin: 0em;
   padding: 0em;
+  /* text-align: center; */
 }
 
 h3 {
@@ -68,28 +71,23 @@ button {
   transition-timing-function: ease-in-out;
 }
 
-button:hover{
+button:hover {
   transform: translate(0, -3%);
   box-shadow:  8px 8px 10px rgba(0, 0, 0, 0.185); 
 }
 
-button:active{
+button:active {
   transform: scale(.95);
   transform: translate(0, 3%);
   box-shadow:  4px 4px 6px rgba(0, 0, 0, 0.185); 
 }
 
 .app {
-  display: flex;
-
-  width: 70vw;
-  max-width: 64em;
+  overflow-y: scroll;
+  margin: 0em auto;
+  height: 100vh;
+  max-width: 45em;
   min-width: 23em;
-  
-  margin: auto;
-  flex-direction: column;
-  align-items: center;
-
 
   box-shadow:  2px 2px 30px rgba(0, 0, 0, 0.144); 
 }
@@ -98,9 +96,9 @@ button:active{
   display: flex;
   
   min-width: 27em;
-  margin: 2em auto ;
+  margin: 2em 3em;
   max-width: 50em;
-  min-width: 18em;
+  min-width: 24em;
   padding: 2em 2em;
 
   align-items: center;
@@ -118,7 +116,9 @@ button:active{
   min-width: 12em;
   margin: .5em 0em;
   padding: 1em 2em;
+  text-align: left;
 
+  justify-content: space-between;
   flex-direction: row;
   align-items: center;
   
@@ -135,20 +135,40 @@ button:active{
 }
 
 .suggestion-image {
-  border-radius: 10%;
+  /* border-radius: 10%; */
   width: 6em;
   height: 6em;
-  margin-right: 1em;
+  /* margin-right: 1em; */
 }
 
-@media only screen and (max-width: 402px) {
+.suggestion-detail-wrapper {
+  margin: 0em 2em;
+}
+
+@media only screen and (max-width: 30em) {
+
+  button {
+    margin: 2em 0em;
+  }
+
+  .card {
+    margin: 2em 0em;
+    /* width: 100%; */
+  }
+
+  .suggestion-image {
+    margin: 1em 2em;
+    width: 10em;
+    height: 6em;
+  }
+
   .suggestion-card {
     flex-direction: column;
-    justify-content: space-between;
     height: 20em;
-    padding: 4em 1em;
+    /* padding: 4em 1em; */
 
   }
+  
 
 }
 

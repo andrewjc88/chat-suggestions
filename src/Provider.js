@@ -70,7 +70,6 @@ class AppProvider extends Component {
   render() {
     return (
       <AppContext.Provider value={{
-
         state: this.state,
 
         clickShowFindSuggestions: () => this.setState(
@@ -92,18 +91,16 @@ class AppProvider extends Component {
               v => v.name.toLowerCase().includes(val)
             );
             this.setState({ suggestionResult: matches })
-          } 
+          }
         },
 
         addSuggestionsPick: (suggestion) => this.setState({
           suggestionsPicks: [...this.state.suggestionsPicks, suggestion]
         }),
 
-        upVoteClick: (nameOf) => {
-          const voteSug = this.state.suggestionsPicks.map( sug => {
-            if (sug.name === nameOf) {
-              sug.vote = 'upVote';
-            }
+        upVoteClick: (nameOf, ) => {
+          const voteSug = this.state.suggestionsPicks.map(sug => {
+            if (sug.name === nameOf) { sug.vote = 'upVote' }
             return sug;
           })
           this.setState((suggestionsPicks) => ({
@@ -112,10 +109,8 @@ class AppProvider extends Component {
         },
 
         downVoteClick: (nameOf) => {
-          const voteSug = this.state.suggestionsPicks.map( sug => {
-            if (sug.name === nameOf) {
-              sug.vote = 'downVote';
-            }
+          const voteSug = this.state.suggestionsPicks.map(sug => {
+            if (sug.name === nameOf) { sug.vote = 'downVote' }
             return sug;
           })
           this.setState((suggestionsPicks) => ({
@@ -127,9 +122,8 @@ class AppProvider extends Component {
           messages: [...this.state.messages, message]
         })
 
-  }
-}>
-  { this.props.children }
+      }}>
+        {this.props.children}
       </AppContext.Provider >
     )
   };
