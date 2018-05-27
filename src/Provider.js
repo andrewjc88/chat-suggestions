@@ -98,7 +98,8 @@ class AppProvider extends Component {
           suggestionsPicks: [...this.state.suggestionsPicks, suggestion]
         }),
 
-        upVoteClick: (nameOf, ) => {
+        // upVoteClick: (nameOf, type) => {
+        upVoteClick: (nameOf) => {
           const voteSug = this.state.suggestionsPicks.map(sug => {
             if (sug.name === nameOf) { sug.vote = 'upVote' }
             return sug;

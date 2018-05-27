@@ -12,6 +12,7 @@ class App extends Component {
       duration: 1000,
       easing: 'ease-out',
       delay: 1
+      
     });
 
     return (

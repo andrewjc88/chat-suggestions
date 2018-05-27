@@ -30,8 +30,8 @@ const ShowSuggestions = () => (
               </div>
               <div className="add-wrapper">
                 <b>Recommend</b>
-                <div className="add-button-wrapper" onClick={
-                  () => context.addSuggestionsPick(result)
+                <div className="add-button-wrapper" 
+                  onClick={ () => context.addSuggestionsPick(result)
                 }>
                   <div className="add-button"></div>
                 </div>
